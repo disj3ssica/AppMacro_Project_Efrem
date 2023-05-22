@@ -1,8 +1,8 @@
 clearvars, clc
 % load toolbox
-addpath(genpath('C:\Program Files\MATLAB\R2023a\VAR-Toolbox-main\v3dot0'))
+addpath(genpath('C:\Users\cremj\Desktop\AppMacro_Project_Efrem\VAR toolbox CesaBianchi\VAR-Toolbox-main\v3dot0'))
 % set directory
-cd 'C:\Users\Jessica\Desktop\Applied Macro Project'
+cd 'C:\Users\cremj\Desktop\AppMacro_Project_Efrem'
 
 % load data
 
@@ -27,4 +27,4 @@ dataTable.Date = dates;
 
 % remove toolbox (ADVISED ON GITHUB https://github.com/ambropo/VAR-Toolbox
 % )
-rmpath(genpath('C:\Program Files\MATLAB\R2023a\VAR-Toolbox-main\v3dot0'))
+rmpath(genpath('C:\Users\cremj\Desktop\AppMacro_Project_Efrem\VAR toolbox CesaBianchi\VAR-Toolbox-main\v3dot0'))
