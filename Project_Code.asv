@@ -24,7 +24,7 @@ CPIcore = dataTable.('CPI core (less food and energy) index (US city average)');
 logCPI = 100 * log(CPIcore);
 dataTable.LogCPI = logCPI;  % Add the new variable to the dataTable
 
-% 
+
 
 
 

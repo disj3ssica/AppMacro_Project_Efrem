@@ -10,7 +10,7 @@
 \begin{titlepage}
     \centering
     \vspace*{2cm}
-    {\LARGE Example Title \par}
+    {\LARGE Information Shocks and the Global Financial Cycle \par}
     \vspace{2cm}
     {\large Jessica Cremonese \par}
     \vspace{1cm}
@@ -27,44 +27,41 @@
 \section{Introductory remarks}
 
 % WHAT IS A PRICE PUZZLE?               [DONE]
-In the study of monetary policy (MP) shocks, a "price puzzle" refers to a situation where the response of prices to a MP shock is inconsistent with the predictions of standard economic models. Specifically, it refers to an unexpected short-term relationship between MP actions, such as changes in interest rates, and the behavior of prices. A contractionary MP shock, such as an increase in interest rates, is expected to dampen aggregate demand and result in lower output and inflation. However, researchers have found instances where the response of prices to MP shocks is contrary to these expectations. For example, after a contractionary MP shock, prices may increase in the short term instead of decreasing as predicted. This deviation from the predicted relationship between MP and prices is referred to as a price puzzle. Some explanations for the price puzzle could be imperfect competition, nominal rigidities, delayed price adjustment, supply-side effects, and other factors that can lead to short-term departures from standard economic models. Understanding the causes and implications of the price puzzle is crucial for improving our understanding of the dynamics of MP and its impact on the economy.
+In the study of monetary policy (MP) shocks, a \enquote{price puzzle} refers to a situation where the response of prices to a MP shock is inconsistent with the predictions of standard economic models. Specifically, it refers to an unexpected short-term relationship between MP actions, such as changes in interest rates, and the behavior of prices. A contractionary MP shock, such as an increase in interest rates, is expected to dampen aggregate demand and result in lower output and inflation. However, researchers have found instances where the response of prices to MP shocks is contrary to these expectations. For instance, after a contractionary MP shock, prices may increase in the short term instead of decreasing as predicted. This deviation from the predicted relationship between MP and prices is referred to as a price puzzle. Some explanations could be imperfect competition, nominal rigidities, delayed price adjustment, supply-side effects, and other factors that can lead to short-term departures from predictions of economic models. Understanding the causes and implications of the price puzzle is crucial for improving our understanding of the dynamics of MP and its impact on the economy.
 
 
 % Give intuition about why MP shocks affect the GFC: INTERNATIONAL SHOCK TRANSMISSION.
-MP decisions in the US have been shown to have spillover effects on a global scale. 
+MP decisions in the US have been shown to have spillover effects on a global scale. The dollar's long standing hegemony as the strongest global currency and the unprecedented financial globalization contribute to the transmission of domestic US policy across borders. 
 
-[GIVE REASONS, USE MAREY2020] 
-- Financial Intermediation and Credit Conditions
-- Spillover Effects
-- Risk Perception and Asset Allocation
-- Expectations and Forward Guidance on the dollar
-
-
+Miranda-Agrippino and Rey (2020) studies how the GFC shapes US MP spillovers. A large portion of international portfolios are denominated in dollars, thus any MP decision affects financial intermediaries' decisions and credit conditions on a global scale, as well as risk perception and asset allocation decisions. 
 
 % DEFINING INFORMATION SHOCKS
+Furthermore, MP decisions may give rise to information shocks when the policy decision implicitly conveys information about the CB's information and or expectations about the economy's fundamentals. The discrepancy between the CB's and the other agents' information set generates movement in the market which is otherwise unexplained.
 
 
 % ON MAREY 2020
     %   DOES MAREY FIND PRICE OR OUTPUT PUZZLES? CHECK AND COMMENT.
+Miranda-Agrippino and Rey (2020) explores the international transmission of MP through global intermediaries and global asset prices, finding that there are powerful financial spillovers from US MP to other countries. After a MP shock the GFC responds with significant fluctuations in financial activities, global banks deleveraging both domestically and abroad, increased aggregate risk aversion and a contraction of international credit. The authors document the existence of a factor in the GFC that accounts for 20\% of the common variation in the price of risky assets worldwide.
+The authors identify MP shocks using market price revisions around the Federal Open Market Committee (FOMC) announcements, stating that, in a market with informational asymmetries, these surprises represent a reaction to the central bank (CB) conveying implicit information about market fundamentals.
 
-Miranda-Agrippino and Rey (2020) explores the international transmission of MP through global intermediaries and global asset prices, finding that there are powerful financial spillovers from US MP to other countries. After a US MP shock the GFC responds with significant fluctuations in financial activities, global banks deleveraging both domestically and abroad, increased aggregate risk aversion and a contraction of international credit. The authors document the existence of a common factor in the GFC that accounts for 20\% of the common variation in the price of risky assets worldwide.
 
-Miranda-Agrippino and Rey (2020) identify MP shocks using market price revisions around the Federal Open Market Committee (FOMC) announcements, stating that, in a market with informational asymmetries, these surprises represent a reaction to the central bank (CB) conveying implicit information about market fundamentals.
-
-    
 
 % ON MARICCO 2021
 Miranda-Agrippino and Ricco (2021) contribute to the literature by providing an empirical specification to account for informational asymmetries that generate an \enquote{information channel} for MP choices. The authors state that an emerging feature of models with imperfect information is that high frequency instruments are predictable and autocorrelated, due to the sluggish adjustment of expectations. 
+They build an instrument for monetary policy shocks as the component of high frequency market surprises that is unforecastable and independent from the CB's information set about economic conditions. % MP instrument
+A proxy for information shocks is built as a high-frequency market-based monetary surprise around the FOMC monthly announcements. % info shock proxy
 
-Therefore, they define MP shocks as the exogenous shifts in the policy instrument that are unforecastable and independent from the CB's information set about economic conditions. The instrument for MP shocks is constructed by projecting monetary surprises on their own lags and on the CB's information set. 
-
-With this identification strategy they find no output nor price puzzles. Furthermore, they find that a monetary contracion is unequivocally and significantly recessionary, with output contracting immediately and significantly, as well as prices, domestic demand, labor market conditions, investments and household wealth. There is evidence of a credit channel which magnifies these effects through credit and financial markets. 
+With this identification strategy they find no output nor price puzzles. Furthermore, they find that a monetary contracion is unequivocally and significantly recessionary, with output contracting immediately and significantly, as well as prices, domestic demand, labor market conditions, investments and household wealth. There is evidence of a credit channel which magnifies these effects through credit and financial markets, the yield curve flattens, borrowing costs and corporate spreads rise.
 
 
 
 % MAREY 2020 in light of MARICCO 2021:
+In light of Miranda-Agrippino and Ricco (2021) a reasonable suspicion is that Miranda-Agrippino and Rey (2020) does not disentangle the information channel from the monetary policy channel.
 
 
+
+% Final intro paragraph
+In the following section I will estimate a VAR model to analyze the effects of an information shock as defined by Miranda-Agrippino and Ricco (2021) on the GFC and other variables. 
 
 \section{Application}
 s
