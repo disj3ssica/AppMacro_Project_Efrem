@@ -1,11 +1,13 @@
 \documentclass[11pt,a4paper,draft]{article}
-\usepackage[margin=2.3cm]{geometry}
-\usepackage{xcolor}
-\usepackage{amsmath}
-\usepackage{csquotes}
-\usepackage{setspace}
-\setstretch{1.3} % Set line spacing to 1.5 times the font size
-\raggedbottom % Remove extra vertical space between sections
+% Doc settings
+    \usepackage[margin=2.3cm]{geometry}
+    \usepackage{xcolor}
+    \usepackage{amsmath}
+    \usepackage{csquotes}
+    \usepackage{setspace}
+    \usepackage{url}
+    \setstretch{1.3}    % Set line spacing to 1.5 times the font size
+    \raggedbottom       % Remove extra vertical space between sections
 
 \begin{document}
 
@@ -59,10 +61,15 @@ Miranda-Agrippino and Ricco (2021) sheds light on the dynamics of Miranda-Agripp
 
 
 % Final intro paragraph
-In the following section I will estimate a VAR model to analyze the effects of an information shock as defined by Miranda-Agrippino and Ricco (2021).
 
-\section{Application}
-s
+In section 2 I will estimate a VAR model to obtain the relevant impulse response functions (IRFs) to an information shock, exploiting Miranda-Agrippino and Ricco's (2021) proxy INFO\_FF4.
+Section 3 discusses and concludes.
+
+
+
+
+\section{Identification and estimation}
+
 
 
 \section{Discussion}
@@ -76,22 +83,12 @@ s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 \section{References}
 \begin{itemize}
+    \item Cesa-Bianchi, Ambrogio. \url{https://github.com/ambropo/VAR-Toolbox}, VAR toolbox for MatLab
     \item Miranda-Agrippino, Silvia, and Hélene Rey. \enquote{US monetary policy and the global financial cycle.} The Review of Economic Studies 87.6 (2020): 2754-2776.
     \item Miranda-Agrippino, Silvia, and Giovanni Ricco. \enquote{The transmission of monetary policy shocks.} American Economic Journal: Macroeconomics 13.3 (2021): 74-107.
+
 \end{itemize}
 
 \end{document}
