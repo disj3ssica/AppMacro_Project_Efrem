@@ -3,6 +3,7 @@ clear; clear session; close all; clc
 % add toolbox path:
 addpath(genpath('C:\Users\Jessica\Desktop\AppMacro_Project_Efrem\VAR toolbox CesaBianchi\VAR-Toolbox-main\v3dot0'))
 
+
 %% 1.   LOAD & STORE DATA
 
 [xlsdata, xlstext] = xlsread('database_mpshocks_infoshocks.xlsx');
@@ -30,13 +31,13 @@ FigSize(50,10)   % FigSize(xdim,ydim)
 
 for ii=1:nvar
     subplot(4,2,ii) % SUBPLOT(m,n,p) divides the current figure into an m-by-n grid
-    H(ii) = plot(DATA.(vnames{ii}),'m-', 'LineWidth',1.5);
+    H(ii) = plot(DATA.(vnames{ii}),'b-', 'LineWidth',1.5);
     title(vnames(ii)); 
     DatesPlot(datesnum(1),nobs,6,'m') % Set the x-axis label dates
     grid on; 
 end
 % save figure manually as VECTOR IMAGE (max possible quality)
-%clf('reset')
+
 
 
 
@@ -67,8 +68,9 @@ end
     % -----------------------------------------------------------------------
 
 % Select ENDO variables [ TO CHECK ]
-Xvnames  = {'INFO_FF4','Unempl_Rate','logCPI100','interest_rate_3month','spread_10yr3month','GFC'};
-Xvnames_long = {'Information shock proxy','Unemployment Rate', 'LogPrices','Policy Rate', 'Spread', 'Global Financial Cycle'};
+    % ordine variabili: slow moving per prime, fast moving dopo
+Xvnames  = {'INFO_FF4','logCPI100','Unempl_Rate','GFC','interest_rate_3month','spread_10yr3month',};
+Xvnames_long = {'Information shock','LogPrices','Unemployment Rate','Global Financial Cycle','Policy Rate', 'Spread'};
 Xnvar = length(Xvnames);
 
 % Matrices [ TO CHECK ]
@@ -78,7 +80,7 @@ for ii = 1 : Xnvar
 end
 
 % VAR parameters
-det = 1;
+det = 2;
 nlags = 3;
 
 % Estimate VAR
@@ -86,7 +88,7 @@ nlags = 3;
 
 % Update the VARopt structure (edit VARoptions to see meaning)
 VARopt.vnames = Xvnames_long;   % endogenous variables names
-VARopt.nsteps = 24;             % number of steps for computation of IRFs and FEVDs
+VARopt.nsteps = 40;             % number of steps for computation of IRFs and FEVDs
 VARopt.quality = 1;             % quality of exported figures: 1=high (ghostscript required), 0=low
 VARopt.FigSize = [26,12];       % size of window for plots
 VARopt.firstdate = datesnum(1); % initial date of the sample in format 1999.75 => 1999Q4 (both for annual and quarterly data)
@@ -94,6 +96,9 @@ VARopt.frequency = 'm';         % frequency of the data: 'm' monthly, 'q' quarte
 VARopt.figname= 'graphics/SW_'; % string for name of exported figure
 
 VARopt.pctg      = 68;          % confidence level for bootstrap
+
+
+
 
 % 3.2   IMPULSE RESPONSES
 %-------------------------------------------------------------------------- 
@@ -106,6 +111,22 @@ VARopt.snames = {'\epsilon^{1}','\epsilon^{2}','\epsilon^{InfShock}'};    % shoc
 [IRinf,IRsup,IRmed,IRbar] = VARirband(VAR,VARopt);
 % Plot IR
 VARirplot(IRbar,VARopt,IRinf,IRsup);
+
+%% 3.3 FORECAST ERROR VARIANCE DECOMPOSITION
+%-------------------------------------------------------------------------- 
+% Compute VD
+[VD, VAR] = VARvd(VAR,VARopt);
+% Compute VD error bands
+[VDinf,VDsup,VDmed,VDbar] = VARvdband(VAR,VARopt);
+% Plot VD
+VARvdplot(VDbar,VARopt);
+
+%% 3.4 HISTORICAL DECOMPOSITION
+%-------------------------------------------------------------------------- 
+% Compute HD
+[HD, VAR] = VARhd(VAR,VARopt);
+% Plot HD
+VARhdplot(HD,VARopt);
 
 
 
