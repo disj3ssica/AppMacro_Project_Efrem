@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,draft]{article}
+\documentclass[11pt,a4paper]{article}
 % Doc settings
     \usepackage[margin=2.3cm]{geometry}
     \usepackage{xcolor}
@@ -6,6 +6,10 @@
     \usepackage{csquotes}
     \usepackage{setspace}
     \usepackage{url}
+    \usepackage{graphicx}
+    \usepackage{geometry}
+    \usepackage{subcaption}
+
     \setstretch{1.25}    % Set line spacing to 1.5 times the font size
     \raggedbottom       % Remove extra vertical space between sections
 
@@ -29,7 +33,7 @@
 
 
 \newpage
-\section{Introductory remarks}    %
+\section{Introductory remarks}    
 Unprecedented financial globalization, coupled with the emergence of global intermediaries, has profoundly influenced the functioning of national financial markets and the transmission mechanisms of policy shocks among increasingly interconnected nations.
 The United States dollar has traditionally held a position of unrivaled dominance in the international arena, to such an extent that US monetary policy has been observed to have spillover effects on other economies.
 Due to the extensive dollar-denominated assets, domestic decisions significantly impact the portfolios of major global banks, thereby affecting lending and credit choices, corporate spreads, price levels, and agents' risk propensity.
@@ -73,11 +77,54 @@ Section 3 will provide a discussion of results and conclude.
 
 
 \section{Identification and estimation}
-I estimate a VAR(3) model with the following 
+% Technical details
+In order to estimate the effects of an information shock on the GFC I employ a VAR model with three lags, a constant and a trend. The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab. 
+
+%Data
+The dataset covers monthly observations from 1991 to 2015. I include all the available variables in the model: the unemployment rate, a logarithmic transformation of CPI, the 3-month policy rate and the GFC, 10-year-3-month spread.
+
+Time series and IRFs for an analogous VAR model based on the monetary policy proxy, MPI\_FF4, have already been shown in class. For this reason, I do not report my output for IRFs in the case of a MP shock and I will refer to the provided material for any comparison.
+
+% insert vectorial figures
+
+\newpage %IRFs
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=.5]{Graphs/IRF68.jpeg}
+    \caption{IRFs for an information shock - 68\% confidence bands}
+    \label{fig:IRF68}
+  \end{figure}
+
+  \newpage %ADDITIONAL
+
+  \begin{figure}[ht]
+    \centering
+
+    \begin{subfigure}{\textwidth}
+        \includegraphics[scale=.42]{Graphs/forecast_err_variance_decomp.jpg}
+        \caption{Forecast Error Variance Decomposition}
+        \label{fig:fevd}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Adjust the vertical space between the rows
+    
+    \begin{subfigure}{\textwidth}
+        \includegraphics[scale=.42]{Graphs/historical_decomp_nolegend.jpg}
+        \caption{Historical Decomposition of Information Shock}
+        \label{fig:hd}
+    \end{subfigure}
+
+    \caption{Additional Elements}
+    \label{fig:additional_elements}
+  \end{figure}
+  
 
 % 1. IMPOSTAZIONI DEL VAR
 % 2. GRAFICO SERIE VARIABILI (SE C'E' SPAZIO)
 % 
+
+
 
 \section{Discussion}
 
@@ -94,10 +141,10 @@ I estimate a VAR(3) model with the following
 \section*{References}
 \begin{itemize}
     \item Cesa-Bianchi, Ambrogio. \url{https://github.com/ambropo/VAR-Toolbox}, VAR toolbox for MatLab
-    \item Miranda-Agrippino, Silvia, and Hélene Rey. \enquote{US monetary policy and the global financial cycle.} The Review of Economic Studies 87.6 (2020): 2754-2776.
+    \item Christiano, Lawrence J., Martin Eichenbaum, and Charles L. Evans. \enquote{Nominal rigidities and the dynamic effects of a shock to monetary policy.} Journal of political Economy 113.1 (2005): 1-45.
     \item Miranda-Agrippino, Silvia, and Giovanni Ricco. \enquote{The transmission of monetary policy shocks.} American Economic Journal: Macroeconomics 13.3 (2021): 74-107.
-    \item % PAPER 3
-
+    \item Miranda-Agrippino, Silvia, and Hélene Rey. \enquote{US monetary policy and the global financial cycle.} The Review of Economic Studies 87.6 (2020): 2754-2776.
+    
 \end{itemize}
 
 \end{document}

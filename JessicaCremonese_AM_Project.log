@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  29 MAY 2023 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  29 MAY 2023 19:32
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/Jessica/Desktop/AppMacro_Project_Efrem/JessicaCremonese_AM_Project
@@ -151,30 +151,64 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ) (c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+) (c:/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (c:/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (c:/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen160
+\captionmargin=\dimen161
+\caption@leftmargin=\dimen162
+\caption@rightmargin=\dimen163
+\caption@width=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
+)
+\c@subfigure=\count283
+\c@subtable=\count284
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count281
+\l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box53
 ) (./JessicaCremonese_AM_Project.aux)
 \openout1 = `JessicaCremonese_AM_Project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -212,33 +246,72 @@ LaTeX Font Info:    ... okay on input line 12.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen158
+\scratchcounter=\count286
+\scratchdimen=\dimen168
 \scratchbox=\box54
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\nofMPsegments=\count287
+\nofMParguments=\count288
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen159
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen169
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
 \everyMPtoPDFconversion=\toks25
-) [1
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2] (./JessicaCremonese_AM_Project.aux) ) 
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2]
+<Graphs/IRF68.jpeg, id=16, 1009.52156pt x 558.58687pt>
+File: Graphs/IRF68.jpeg Graphic file (type jpg)
+<use Graphs/IRF68.jpeg>
+Package pdftex.def Info: Graphs/IRF68.jpeg  used on input line 94.
+(pdftex.def)             Requested size: 504.75955pt x 279.29276pt.
+
+Overfull \hbox (38.13452pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+<Graphs/forecast_err_variance_decomp.jpg, id=17, 1175.14032pt x 627.84563pt>
+File: Graphs/forecast_err_variance_decomp.jpg Graphic file (type jpg)
+<use Graphs/forecast_err_variance_decomp.jpg>
+Package pdftex.def Info: Graphs/forecast_err_variance_decomp.jpg  used on input line 105.
+(pdftex.def)             Requested size: 493.55557pt x 263.69336pt.
+
+Overfull \hbox (26.93054pt too wide) in paragraph at lines 105--106
+[][] 
+ []
+
+<Graphs/historical_decomp_nolegend.jpg, id=18, 1185.67969pt x 628.59843pt>
+File: Graphs/historical_decomp_nolegend.jpg Graphic file (type jpg)
+<use Graphs/historical_decomp_nolegend.jpg>
+Package pdftex.def Info: Graphs/historical_decomp_nolegend.jpg  used on input line 113.
+(pdftex.def)             Requested size: 497.98209pt x 264.00954pt.
+
+Overfull \hbox (31.35706pt too wide) in paragraph at lines 113--114
+[][] 
+ []
+
+[3 <./Graphs/IRF68.jpeg>] [4 <./Graphs/forecast_err_variance_decomp.jpg> <./Graphs/historical_decomp_nolegend.jpg>] (./JessicaCremonese_AM_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 3817 strings out of 476024
- 56794 string characters out of 5794017
+ 5603 strings out of 476024
+ 91180 string characters out of 5794017
  1860382 words of memory out of 5000000
- 24263 multiletter control sequences out of 15000+600000
+ 26015 multiletter control sequences out of 15000+600000
  517411 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,62p,635b,299s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,635b,487s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on JessicaCremonese_AM_Project.pdf (3 pages, 89925 bytes).
+Output written on JessicaCremonese_AM_Project.pdf (5 pages, 558531 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

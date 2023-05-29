@@ -89,7 +89,7 @@ nlags = 3;
 % Update the VARopt structure (edit VARoptions to see meaning)
 VARopt.vnames = Xvnames_long;   % endogenous variables names
 VARopt.nsteps = 40;             % number of steps for computation of IRFs and FEVDs
-VARopt.quality = 1;             % quality of exported figures: 1=high (ghostscript required), 0=low
+VARopt.quality = 0;             % quality of exported figures: 1=high (ghostscript required), 0=low
 VARopt.FigSize = [26,12];       % size of window for plots
 VARopt.firstdate = datesnum(1); % initial date of the sample in format 1999.75 => 1999Q4 (both for annual and quarterly data)
 VARopt.frequency = 'm';         % frequency of the data: 'm' monthly, 'q' quarterly, 'y' yearly
@@ -100,7 +100,7 @@ VARopt.pctg      = 68;          % confidence level for bootstrap
 
 
 
-% 3.2   IMPULSE RESPONSES
+%% 3.2   IMPULSE RESPONSES
 %-------------------------------------------------------------------------- 
 % To get zero contemporaneous restrictions set
 VARopt.ident = 'short'; % identification method for IRFs ('short' zero short-run restr [CHOLESKY], 'long' zero long-run restr, 'sign' sign restr, 'iv' external instrument)
@@ -111,6 +111,9 @@ VARopt.snames = {'\epsilon^{1}','\epsilon^{2}','\epsilon^{InfShock}'};    % shoc
 [IRinf,IRsup,IRmed,IRbar] = VARirband(VAR,VARopt);
 % Plot IR
 VARirplot(IRbar,VARopt,IRinf,IRsup);
+
+
+
 
 %% 3.3 FORECAST ERROR VARIANCE DECOMPOSITION
 %-------------------------------------------------------------------------- 
