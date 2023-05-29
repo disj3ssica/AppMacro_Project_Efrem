@@ -29,7 +29,7 @@
 
 
 \newpage
-\section{Introductory remarks}
+\section{Introductory remarks}    %
 Unprecedented financial globalization and the emergence of global intermediaries have affected her national financial markets work and the transmission of monetary policy shocks between interconnected countries. The United states dollar represents the dominant currency on the international scenario, so much so that US monetary policy has been documented to have spillover effects to other countries. Therefore, monetary policy decisions in the US directly influence the global financial cycle. Domestic decisions affect major global banks' portfolios through assets being largely denominated in dollars. Consequently, lending and credit decisions are affected by monetary policy decisions, corporate spreads and prices are affected as well as agents' risk propensity. 
 
 % WHAT IS A PRICE PUZZLE?
@@ -37,7 +37,7 @@ In the study of monetary policy (MP) shocks, a \enquote{price puzzle} refers to 
 
 % MAREY 2020
 Miranda-Agrippino and Rey (2020) investigates the spillovers of us monetary policy. MP shocks are identified using an external instrument constructed from high-frequency asset prices adjustments around FOMC (Federal Open Market Committee) announcements. 
-The instrument is valid only under the assumption that market agents can correctly discern monetary policy decisions from policy actions. If informational asymmetries are present, the high-frequency surprises are also a funcion of the \enquote{FED information effect}, i.e. information shocks about the economic fundamentals that are implicitly conveyed by the central bank's announcements. Failure to account for information asymmetries results in price and output puzzles. The authors opt for analysing the transmission of MP shocks via a rich information VAR, which reduces issues such as omitted variables and claims to manage imperfect information. 
+The instrument is valid only under the assumption that market agents can correctly discern monetary policy decisions from policy actions. If informational asymmetries are present, the high-frequency surprises are also a funcion of the \enquote{FED information effect}, i.e. information shocks about the economic fundamentals that are implicitly conveyed by the central bank's announcements. Failure to account for information asymmetries results in price and output puzzles. The authors opt for analysing the transmission of MP shocks via a rich information VAR, which reduces issues such as omitted variables and claims to manage imperfect information. % MA IN REALTA' NON RIESCONO PERCHE' SI ASSUME CHE CB HA PERFECT INFORMATION, 
 
 % possibly report results of MAREY (2020)
 Their results on domestic resposes report that a contractionary shosk depresses prices and output, as well as housing investments. Unemployment rises and prices adjust downward. The price puzzle is less pronounced with the authors' approach with respect to standard IV approaches.
@@ -55,10 +55,13 @@ Their results show behavior of dynamic responses coherent with economic theory a
 
 
 % MAREY 2020 in light of MARICCO 2021:
-% ******************   CHECK VERY WELL WITH DARIO   *****************
+%       [   potenzialmente togli    ]
 Miranda-Agrippino and Ricco (2021) sheds light on the dynamics of Miranda-Agrippino and Rey (2020). Specifically, the average monthly surprise instrument employed in the latter still shows a slight price puzzle which entirely disappears in the informationally robust identification of the 2021 paper, where a MP shock immediately contracts industrial production and raises the unemployment rate.
 
-
+% secondo Dario:
+% limite di REY: external instrument IV + 
+    %%          NON TIENE CONTO DEL SIGNALING EFFECT DELLA CB !!!
+% RICCO usa proxy, quindi proxy entra come variabile
 
 % Final intro paragraph
 
@@ -69,25 +72,30 @@ Section 3 discusses and concludes.
 
 
 \section{Identification and estimation}
+I estimate a VAR(3) model with the following 
 
-
+% 1. IMPOSTAZIONI DEL VAR
+% 2. GRAFICO SERIE VARIABILI (SE C'E' SPAZIO)
+% 
 
 \section{Discussion}
-% In light of MARICCO, how should we think about the MAREY paper? Answer this to provide motivazion with what you do with the data.
+
+% > DISCUSSION OF IRFS (tutte VELOCEMENTE)
+% > DISCUSSIONE DELLA IRF DEL GFC (NEL DETTAGLIO)
+    % > MECCANISMI POSSIBILI
+    % > CONFRONTO CON LA IRF A MP SHOCK
+
+    
 
 
-s
 
 
-
-
-
-
-\section{References}
+\section*{References}
 \begin{itemize}
     \item Cesa-Bianchi, Ambrogio. \url{https://github.com/ambropo/VAR-Toolbox}, VAR toolbox for MatLab
     \item Miranda-Agrippino, Silvia, and Hélene Rey. \enquote{US monetary policy and the global financial cycle.} The Review of Economic Studies 87.6 (2020): 2754-2776.
     \item Miranda-Agrippino, Silvia, and Giovanni Ricco. \enquote{The transmission of monetary policy shocks.} American Economic Journal: Macroeconomics 13.3 (2021): 74-107.
+    \item % PAPER 3
 
 \end{itemize}
 
