@@ -9,10 +9,9 @@
     \usepackage{graphicx}
     \usepackage{geometry}
     \usepackage{subcaption}
-    \usepackage{wrapfig}
 
 
-    \setstretch{1.25}    % Set line spacing to 1.5 times the font size
+    \setstretch{1.4}    % Set line spacing to 1.5 times the font size
     \raggedbottom       % Remove extra vertical space between sections
 
 \begin{document}
@@ -79,16 +78,16 @@ Section 3 will provide a discussion of results and conclude.
 
 
 \section{Identification and estimation}
-To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
+To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
 
 The dataset consists of monthly observations from 1991 to 2015. I include all available variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, and the GFC 10-year-3-month spread.
 
-During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material for any comparisons.
+During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons.
 
 Figure 1 shows the IRFs in the case of a positive information shock. The responses represent the market agents absorbing information from the CB's short-term macroeconomic outlook.
-%prices
-Initially, only the policy rate and the unemployment rate respond significantly to the shock. Employment increases and so does the policy rate, in line with the positive expectations of the CB for the future economic conditions. Prices show a postive and persistent effect as the economy heats up. Following the rest of the variables, corporate spreads drop in response to positive news about economic fundamentals. 
-% GFC
+%other vars description
+Initially, only the policy rate and the unemployment rate respond significantly to the shock. Employment increases and so does the policy rate, in line with the positive expectations of the CB for the future economic conditions. Prices show a postive and persistent effect as the economy heats up. Following the expansionary trend of the other variables, corporate spreads drop in response to positive news about economic fundamentals. 
+% GFC description
 The GFC shows a positive and significant response for a few periods after the shock hits the economy, in line with what was previously discussed. Agents expect the US fundamentals to be good, therefore the spillover mechanisms boost the GFC as discussed in Section 1.
 
 
@@ -104,6 +103,8 @@ The GFC shows a positive and significant response for a few periods after the sh
 
 Figure 2 shows the Forecast Error Variance Decomposition for the information shock in panel (a), and the Historical Decomposition in panel (b).
 
+% comment GFC response to POLICY RATE and to INFO SHOCK
+% comment SPREAD response to poliy rate and to info shock
 
 
 
@@ -114,7 +115,7 @@ Figure 2 shows the Forecast Error Variance Decomposition for the information sho
 
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[scale=.3]{Graphs/forecast_err_variance_decomp.jpg}
+        \includegraphics[scale=.34]{Graphs/forecast_err_variance_decomp.jpg}
         \caption{Forecast Error Variance Decomposition}
         \label{fig:fevd}
     \end{subfigure}
@@ -123,7 +124,7 @@ Figure 2 shows the Forecast Error Variance Decomposition for the information sho
     
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[scale=.3]{Graphs/historical_decomp_nolegend.jpg}
+        \includegraphics[scale=.34]{Graphs/historical_decomp_nolegend.jpg}
         \caption{Historical Decomposition of Information Shock}
         \label{fig:hd}
     \end{subfigure}
