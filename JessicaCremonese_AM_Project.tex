@@ -9,6 +9,7 @@
     \usepackage{graphicx}
     \usepackage{geometry}
     \usepackage{subcaption}
+    \usepackage{caption}
 
 
     \setstretch{1.4}    % Set line spacing to 1.5 times the font size
@@ -101,12 +102,13 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
 % - - - - - - - - - - - - - - - - - - - - - - -
 
  % - - - - - - - - - FIGURE 2 - - - - - - - - -
-    \begin{figure}[ht]
+    \begin{figure}[hp]
         \centering
 
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.34]{Graphs/forecast_err_variance_decomp.jpg}
+            \includegraphics[scale=.32]{Graphs/forecast_err_variance_decomp.jpg}
+            \captionsetup{font=scriptsize}
             \caption{Forecast Error Variance Decomposition}
             \label{fig:fevd}
         \end{subfigure}
@@ -115,9 +117,22 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
         
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.34]{Graphs/historical_decomp_nolegend.jpg}
-            \caption{Historical Decomposition}
-            \label{fig:hd}
+            \includegraphics[scale=.32]{Graphs/INFO_FF4_HD.jpg}
+            \includegraphics*[scale=0.22]{Graphs/Inkedlegend.jpg}
+            \captionsetup{font=scriptsize}
+            \caption{Information Shock Historical Decomposition}
+            \label{fig:INFOhd}
+        \end{subfigure}
+
+        \vspace{0.2cm} % Adjust the vertical space between the rows
+        
+        \begin{subfigure}{\textwidth}
+            \centering
+            \includegraphics[scale=.32]{Graphs/GFC_HD.jpg}
+            \includegraphics*[scale=0.22]{Graphs/Inkedlegend.jpg}
+            \captionsetup{font=scriptsize}
+            \caption{GFC Historical Decomposition}
+            \label{fig:GFChd}
         \end{subfigure}
 
         \caption{ }

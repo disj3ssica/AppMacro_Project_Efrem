@@ -97,7 +97,7 @@ VARopt.figname= 'graphics/SW_'; % string for name of exported figure
 
 VARopt.pctg      = 68;          % confidence level for bootstrap
 
-
+%VARopt.pick      = 0;       % selects one variable for IRFs and FEVDs plots (0 => plot all)
 
 
 %% 3.2   IMPULSE RESPONSES
@@ -117,6 +117,7 @@ VARirplot(IRbar,VARopt,IRinf,IRsup);
 
 %% 3.3 FORECAST ERROR VARIANCE DECOMPOSITION
 %-------------------------------------------------------------------------- 
+
 % Compute VD
 [VD, VAR] = VARvd(VAR,VARopt);
 % Compute VD error bands
@@ -125,7 +126,42 @@ VARirplot(IRbar,VARopt,IRinf,IRsup);
 VARvdplot(VDbar,VARopt);
 
 %% 3.4 HISTORICAL DECOMPOSITION
-%-------------------------------------------------------------------------- 
+%--------------------------------------------------------------------------
+% 3.3.4 RE-ESTIMATE VAR WITH GFC IN FRONT BECAUSE VARhd(-) does not allow
+% for HD of other variables (might be error in toolbox or mine):
+
+% Select ENDO variables [ TO CHECK ]
+    % ordine variabili: slow moving per prime, fast moving dopo
+Xvnames  = {'GFC','INFO_FF4','logCPI100','Unempl_Rate','interest_rate_3month','spread_10yr3month',};
+Xvnames_long = {'Global Financial Cycle','Information shock','LogPrices','Unemployment Rate','Policy Rate', 'Spread'};
+Xnvar = length(Xvnames);
+
+% Matrices [ TO CHECK ]
+X = nan(nobs, Xnvar)
+for ii = 1 : Xnvar
+    X(: , ii) = DATA.(Xvnames{ii});
+end
+
+% VAR parameters
+det = 2;
+nlags = 3;
+
+% Estimate VAR
+[VAR, VARopt] = VARmodel(X, nlags, det);
+
+% Update the VARopt structure (edit VARoptions to see meaning)
+VARopt.vnames = Xvnames_long;   % endogenous variables names
+VARopt.nsteps = 40;             % number of steps for computation of IRFs and FEVDs
+VARopt.quality = 0;             % quality of exported figures: 1=high (ghostscript required), 0=low
+VARopt.FigSize = [26,12];       % size of window for plots
+VARopt.firstdate = datesnum(1); % initial date of the sample in format 1999.75 => 1999Q4 (both for annual and quarterly data)
+VARopt.frequency = 'm';         % frequency of the data: 'm' monthly, 'q' quarterly, 'y' yearly
+VARopt.figname= 'graphics/SW_'; % string for name of exported figure
+
+VARopt.pctg      = 68;          % confidence level for bootstrap
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
 % Compute HD
 [HD, VAR] = VARhd(VAR,VARopt);
 % Plot HD
