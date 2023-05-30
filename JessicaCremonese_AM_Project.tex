@@ -78,61 +78,53 @@ Section 3 will provide a discussion of results and conclude.
 
 
 \section{Identification and estimation}
-To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
+To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
 
-The dataset consists of monthly observations from 1991 to 2015. I include all available variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, and the GFC 10-year-3-month spread.
+The dataset consists of monthly observations from 1991 to 2015. I include all available variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the GFC and the 10-year-3-month spread.
 
 During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons.
 
 Figure 1 shows the IRFs in the case of a positive information shock. The responses represent the market agents absorbing information from the CB's short-term macroeconomic outlook.
 %other vars description
-Initially, only the policy rate and the unemployment rate respond significantly to the shock. Employment increases and so does the policy rate, in line with the positive expectations of the CB for the future economic conditions. Prices show a postive and persistent effect as the economy heats up. Following the expansionary trend of the other variables, corporate spreads drop in response to positive news about economic fundamentals. 
+Initially, only the policy rate and the unemployment rate respond significantly to the shock. Employment increases and so does the policy rate, in line with positive expectations of the CB for the future economic conditions. Prices show a postive and persistent response as the economy heats up. Following the expansionary trend of the other variables, corporate spreads drop in response to positive information about economic fundamentals. 
 % GFC description
-The GFC shows a positive and significant response for a few periods after the shock hits the economy, in line with what was previously discussed. Agents expect the US fundamentals to be good, therefore the spillover mechanisms boost the GFC as discussed in Section 1.
+Following the impact of the shock on the economy, the GFC exhibits a noteworthy and statistically significant positive response for a limited number of periods, consistent with our earlier analysis. Agents now hold optimistic expectations, the spillover mechanisms further amplify the upward trajectory of the GFC.
 
 
-%% FIGURES %%
-%IRFs FIGURE
-\begin{figure}
-    \centering
-    \includegraphics[scale=.5]{Graphs/IRF68.jpeg}
-    \caption{IRFs for an information shock - 68\% confidence bands}
-    \label{fig:IRF68}
-  \end{figure}
-
-
-Figure 2 shows the Forecast Error Variance Decomposition for the information shock in panel (a), and the Historical Decomposition in panel (b).
-
-% comment GFC response to POLICY RATE and to INFO SHOCK
-% comment SPREAD response to poliy rate and to info shock
-
-
-
-
- %ADDITIONAL
-  \begin{figure}[ht]
-    \centering
-
-    \begin{subfigure}{\textwidth}
+%IRFs   - - - - - - - FIGURE 1 - - - - - - - - 
+    \begin{figure}
         \centering
-        \includegraphics[scale=.34]{Graphs/forecast_err_variance_decomp.jpg}
-        \caption{Forecast Error Variance Decomposition}
-        \label{fig:fevd}
-    \end{subfigure}
-    
-    \vspace{0.2cm} % Adjust the vertical space between the rows
-    
-    \begin{subfigure}{\textwidth}
-        \centering
-        \includegraphics[scale=.34]{Graphs/historical_decomp_nolegend.jpg}
-        \caption{Historical Decomposition of Information Shock}
-        \label{fig:hd}
-    \end{subfigure}
+        \includegraphics[scale=.5]{Graphs/IRF68.jpeg}
+        \caption{IRFs for an information shock - 68\% confidence bands}
+        \label{fig:IRF68}
+    \end{figure}
+% - - - - - - - - - - - - - - - - - - - - - - -
 
-    \caption{Additional Elements}
-    \label{fig:additional_elements}
-  \end{figure}
-  
+ % - - - - - - - - - FIGURE 2 - - - - - - - - -
+    \begin{figure}[ht]
+        \centering
+
+        \begin{subfigure}{\textwidth}
+            \centering
+            \includegraphics[scale=.34]{Graphs/forecast_err_variance_decomp.jpg}
+            \caption{Forecast Error Variance Decomposition}
+            \label{fig:fevd}
+        \end{subfigure}
+        
+        \vspace{0.2cm} % Adjust the vertical space between the rows
+        
+        \begin{subfigure}{\textwidth}
+            \centering
+            \includegraphics[scale=.34]{Graphs/historical_decomp_nolegend.jpg}
+            \caption{Historical Decomposition}
+            \label{fig:hd}
+        \end{subfigure}
+
+        \caption{ }
+        \label{fig:additional_elements}
+    \end{figure}
+% - - - - - - - - - - - - - - - - - - - - - - -
+
 
 
 
@@ -143,7 +135,6 @@ Figure 2 shows the Forecast Error Variance Decomposition for the information sho
     % > MECCANISMI POSSIBILI
     % > CONFRONTO CON LA IRF A MP SHOCK
 
-
 Comparing IRFs between the MP shock and the information shock gives insight into the formation of price puzzles seen in alternative specifications. 
 On impact, both shocks cause an increase in the policy rate. However, Miranda-Agrippino and Ricco (2021) found a MP shock to be unequivocally contractionary, as opposed to what we can ascertain from the IRFs of Figure 1. 
 An information shock signals that the CB expects a strong economy in the near future. In this case, an increase in the policy rate is followed by economic expansion. Prices rise, spreads fall and the GFC is stronger. 
@@ -153,6 +144,17 @@ An instrument such as Miranda-Agrippino and Rey's (2020), based on high-frequenc
     %% source MARICCO 2021:
         %> Monetary policy surprises that contain both monetary policy shocks and demand shocks would blend the two effects reported in the figure and hence produce puzzles.
     
+
+Figure 2 shows the Forecast Error Variance Decomposition for the information shock in panel (a), and the Historical Decomposition in panel (b).
+
+% comment vrs response to poliy rate and to info shock   [   DO  ]
+Forecast error variance decomposition is useful to understand how much a given variable contributes to the other variables. In panel (a), we can see that the policy rate has a hefty effect on the 10-year-3-month spread variable from the get go. Instead, the information shock mostly affects the unemployment rate, consistent with market agents adjusting labor demand depending on their expectations about economic fundamentals.
+% comment GFC response to POLICY RATE and to INFO SHOCK     [   DO  ]
+The GFC is mostly affected by the policy rate and the unemployment rate. % why not so much by the info shock?
+However, given that the information shock originates from the US and provides insights into the state of the US economy, it is crucial to acknowledge that a non-negligible portion of the GFC is influenced by this particular shock. The impact of the information shock on the GFC cannot be dismissed or underestimated, as it plays a substantial role in shaping its dynamics.
+
+
+
 
 
 
