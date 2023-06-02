@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  1 JUN 2023 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  2 JUN 2023 17:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -268,57 +268,57 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2]
-<Graphs/IRF68.jpeg, id=16, 1009.52156pt x 558.58687pt>
-File: Graphs/IRF68.jpeg Graphic file (type jpg)
-<use Graphs/IRF68.jpeg>
-Package pdftex.def Info: Graphs/IRF68.jpeg  used on input line 99.
-(pdftex.def)             Requested size: 504.75955pt x 279.29276pt.
-
-Overfull \hbox (49.51544pt too wide) in paragraph at lines 99--100
- [][] 
- []
-
-<Graphs/forecast_err_variance_decomp.jpg, id=17, 1175.14032pt x 627.84563pt>
-File: Graphs/forecast_err_variance_decomp.jpg Graphic file (type jpg)
-<use Graphs/forecast_err_variance_decomp.jpg>
-Package pdftex.def Info: Graphs/forecast_err_variance_decomp.jpg  used on input line 111.
-(pdftex.def)             Requested size: 376.05258pt x 200.9147pt.
-<Graphs/INFO_FF4_HD.jpg, id=18, 1185.67969pt x 628.59843pt>
-File: Graphs/INFO_FF4_HD.jpg Graphic file (type jpg)
-<use Graphs/INFO_FF4_HD.jpg>
-Package pdftex.def Info: Graphs/INFO_FF4_HD.jpg  used on input line 121.
-(pdftex.def)             Requested size: 379.42525pt x 201.15561pt.
-<Graphs/Inkedlegend.jpg, id=19, 973.6375pt x 84.315pt>
+<Graphs/IRF68_6lags.jpg, id=16, 1157.82562pt x 621.07031pt>
+File: Graphs/IRF68_6lags.jpg Graphic file (type jpg)
+<use Graphs/IRF68_6lags.jpg>
+Package pdftex.def Info: Graphs/IRF68_6lags.jpg  used on input line 99.
+(pdftex.def)             Requested size: 451.55017pt x 242.21645pt.
+<Graphs/forecast_err_variance_decomp_6lags.jpg, id=17, 1199.98312pt x 623.32875pt>
+File: Graphs/forecast_err_variance_decomp_6lags.jpg Graphic file (type jpg)
+<use Graphs/forecast_err_variance_decomp_6lags.jpg>
+Package pdftex.def Info: Graphs/forecast_err_variance_decomp_6lags.jpg  used on input line 111.
+(pdftex.def)             Requested size: 371.99092pt x 193.2299pt.
+<Graphs/Inkedlegend.jpg, id=18, 973.6375pt x 84.315pt>
 File: Graphs/Inkedlegend.jpg Graphic file (type jpg)
 <use Graphs/Inkedlegend.jpg>
-Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 122.
-(pdftex.def)             Requested size: 214.20091pt x 18.54935pt.
-<Graphs/GFC_HD.jpg, id=21, 1157.07281pt x 620.3175pt>
-File: Graphs/GFC_HD.jpg Graphic file (type jpg)
-<use Graphs/GFC_HD.jpg>
-Package pdftex.def Info: Graphs/GFC_HD.jpg  used on input line 132.
-(pdftex.def)             Requested size: 370.27087pt x 198.50566pt.
+Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 112.
+(pdftex.def)             Requested size: 204.46991pt x 17.70667pt.
+<Graphs/INFO_FF4_HD_6lags.jpg, id=20, 1159.33125pt x 616.55344pt>
+File: Graphs/INFO_FF4_HD_6lags.jpg Graphic file (type jpg)
+<use Graphs/INFO_FF4_HD_6lags.jpg>
+Package pdftex.def Info: Graphs/INFO_FF4_HD_6lags.jpg  used on input line 122.
+(pdftex.def)             Requested size: 359.38898pt x 191.12958pt.
 File: Graphs/Inkedlegend.jpg Graphic file (type jpg)
 <use Graphs/Inkedlegend.jpg>
-Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 133.
-(pdftex.def)             Requested size: 214.20091pt x 18.54935pt.
+Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 123.
+(pdftex.def)             Requested size: 204.46991pt x 17.70667pt.
+<Graphs/GFC_HD_6lags.jpg, id=22, 1166.10657pt x 615.0478pt>
+File: Graphs/GFC_HD_6lags.jpg Graphic file (type jpg)
+<use Graphs/GFC_HD_6lags.jpg>
+Package pdftex.def Info: Graphs/GFC_HD_6lags.jpg  used on input line 133.
+(pdftex.def)             Requested size: 361.4893pt x 190.66284pt.
+File: Graphs/Inkedlegend.jpg Graphic file (type jpg)
+<use Graphs/Inkedlegend.jpg>
+Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 134.
+(pdftex.def)             Requested size: 204.46991pt x 17.70667pt.
 
-LaTeX Warning: Float too large for page by 20.37245pt on input line 141.
 
-[3 <./Graphs/IRF68.jpeg>] [4 <./Graphs/Inkedlegend.jpg> <./Graphs/forecast_err_variance_decomp.jpg> <./Graphs/INFO_FF4_HD.jpg> <./Graphs/GFC_HD.jpg>] [5] [6] (./JessicaCremonese_AM_Project.aux) ) 
+LaTeX Warning: Float too large for page by 11.8401pt on input line 142.
+
+[3 <./Graphs/IRF68_6lags.jpg>] [4 <./Graphs/Inkedlegend.jpg> <./Graphs/forecast_err_variance_decomp_6lags.jpg> <./Graphs/INFO_FF4_HD_6lags.jpg> <./Graphs/GFC_HD_6lags.jpg>] [5] [6] (./JessicaCremonese_AM_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 5622 strings out of 476024
- 91469 string characters out of 5794017
+ 5621 strings out of 476024
+ 91626 string characters out of 5794017
  1858382 words of memory out of 5000000
  26031 multiletter control sequences out of 15000+600000
  518077 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,667b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,667b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on JessicaCremonese_AM_Project.pdf (7 pages, 771225 bytes).
+Output written on JessicaCremonese_AM_Project.pdf (7 pages, 811692 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 44 words of extra memory for PDF output out of 10000 (max. 10000000)
 

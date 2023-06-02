@@ -81,7 +81,7 @@ end
 
 % VAR parameters
 det = 2;
-nlags = 3;
+nlags = 6;
 
 % Estimate VAR
 [VAR, VARopt] = VARmodel(X, nlags, det);
@@ -104,7 +104,7 @@ VARopt.pctg      = 68;          % confidence level for bootstrap
 %-------------------------------------------------------------------------- 
 % To get zero contemporaneous restrictions set
 VARopt.ident = 'short'; % identification method for IRFs ('short' zero short-run restr [CHOLESKY], 'long' zero long-run restr, 'sign' sign restr, 'iv' external instrument)
-VARopt.snames = {'\epsilon^{1}','\epsilon^{2}','\epsilon^{InfShock}'};    % shocks names
+VARopt.snames = {'\epsilon^{1}','\epsilon^{2}','\epsilon^{3}'};    % shocks names
 % Compute IR
 [IR, VAR] = VARir(VAR,VARopt);
 % Compute IR error bands
@@ -131,9 +131,9 @@ VARvdplot(VDbar,VARopt);
 % for HD of other variables (might be error in toolbox or mine):
 
 % Select ENDO variables [ TO CHECK ]
-    % ordine variabili: slow moving per prime, fast moving dopo
-Xvnames  = {'GFC','INFO_FF4','logCPI100','Unempl_Rate','interest_rate_3month','spread_10yr3month',};
-Xvnames_long = {'Global Financial Cycle','Information shock','LogPrices','Unemployment Rate','Policy Rate', 'Spread'};
+    % ordine variabili: slow moving per prima, fast moving dopo
+%Xvnames  = {'GFC','INFO_FF4','logCPI100','Unempl_Rate','interest_rate_3month','spread_10yr3month',};
+%Xvnames_long = {'Global Financial Cycle','Information shock','LogPrices','Unemployment Rate','Policy Rate', 'Spread'};
 Xnvar = length(Xvnames);
 
 % Matrices [ TO CHECK ]
