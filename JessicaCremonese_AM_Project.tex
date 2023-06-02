@@ -79,7 +79,7 @@ Section 3 will provide a discussion of results and conclude in Section 4.
 
 
 \section{Identification and estimation}
-To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
+To estimate the effects of an information shock on the GFC, I employ a VAR model with six lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
 
 The dataset consists of monthly observations from 1991 to 2015. I include all available variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the GFC and the 10-year-3-month spread.
 
@@ -96,7 +96,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
 %IRFs   - - - - - - - FIGURE 1 - - - - - - - - 
     \begin{figure}
         \centering
-        \includegraphics[scale=.5]{Graphs/IRF68.jpeg}
+        \includegraphics[scale=.39]{Graphs/IRF68_6lags.jpg}
         \caption{IRFs for an information shock - 68\% confidence bands}
         \label{fig:IRF68}
     \end{figure}
@@ -108,7 +108,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
 
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.32]{Graphs/forecast_err_variance_decomp.jpg}
+            \includegraphics[scale=.32]{Graphs/forecast_err_variance_decomp_6lags.jpg}
             \captionsetup{font=scriptsize}
             \caption{Forecast Error Variance Decomposition}
             \label{fig:fevd}
@@ -118,7 +118,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
         
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.32]{Graphs/INFO_FF4_HD.jpg}
+            \includegraphics[scale=.32]{Graphs/INFO_FF4_HD_6lags.jpg}
             \includegraphics*[scale=0.22]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
             \caption{Information Shock Historical Decomposition}
@@ -129,7 +129,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
         
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.32]{Graphs/GFC_HD.jpg}
+            \includegraphics[scale=.32]{Graphs/GFC_HD_6lags.jpg}
             \includegraphics*[scale=0.22]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
             \caption{GFC Historical Decomposition}
@@ -164,6 +164,7 @@ An instrument such as Miranda-Agrippino and Rey's (2020), based on high-frequenc
 Figure 2 shows the Forecast Error Variance Decomposition (FEVD) for the information shock in panel (a), the information shock's historical decomposition in panel (b), and the GFC's historical decomposition in panel (c).
 
 %vrs response to policy rate and to info shock 
+    % [ ]  CORREGGI PARAGRAFO BASANDOTI SU NUOVO PANEL (a)
 FEVD is useful to understand how much a given variable contributes to the other variables. In panel (a), we can see that the policy rate has an immediate and hefty effect on the 10-year-3-month spread variable. Instead, the information shock mostly affects the unemployment rate, consistent with market agents adjusting labor demand depending on their expectations about economic fundamentals.
 % GFC response to POLICY RATE and to INFO SHOCK
 The GFC is mostly affected by the policy rate and the unemployment rate. 
@@ -173,7 +174,7 @@ However, given that the information shock originates from the US and provides in
 % comment HD of the info shock and of the GFC (nei periodi di crisi l'info shock è più o meno capace di spiegare le fluttuazioni di GFC?)
 
     % INFO SHOCK:
-        % > very noisy but with spikes around high uncertainty periods (1991 recession?, dotcom bubble in 2000, 2008 crisis)
+        % [ ]  CORREGGI PARAGRAFO BASANDOTI SU NUOVO PANEL (B)
 The historical decomposition (HD) of the information shock in panel (b) is informative regarding the level of uncertainty surrounding economic conditions. 
 The panel is noisy and does not suggest a systematic upward or downward contribution of the other variables to the shock's variability. 
 Nevertheless, it is informative regarding the level of uncertainty surrounding economic conditions. 
@@ -183,7 +184,7 @@ Interestingly, the unemployment component emerges as a more notable contributor 
 
 
     % GFC:
-        % > big nosedive in 2008 (expected)
+            % [ ]  CORREGGI PARAGRAFO BASANDOTI SU NUOVO PANEL (c)
         % > very affected by policy rate (see policy of the FED in the 2000s, might explain, and some history of the dot com bubble)
         % > policy rate was pushing up the GFC around 2006 -> too lenient FED was letting market overheat?
 Relative to panel (b), panel (c) exhibits significantly reduced noise. 
