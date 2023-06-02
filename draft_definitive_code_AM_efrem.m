@@ -81,7 +81,7 @@ end
 
 % VAR parameters
 det = 2;
-nlags = 6;
+nlags = 3;
 
 % Estimate VAR
 [VAR, VARopt] = VARmodel(X, nlags, det);

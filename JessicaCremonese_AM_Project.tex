@@ -79,24 +79,29 @@ Section 3 will provide a discussion of results and conclude in Section 4.
 
 
 \section{Identification and estimation}
-To estimate the effects of an information shock on the GFC, I employ a VAR model with six lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
+To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
 
-The dataset consists of monthly observations from 1991 to 2015. I include all available variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the GFC and the 10-year-3-month spread.
+The dataset consists of monthly observations from 1991 to 2015. I include all available periods and variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the GFC and the 10-year-3-month spread.
 
 During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons.
 
 \subsection{\textit{Impulse Response Functions}}
 Figure 1 shows the IRFs in the case of a positive information shock. The responses represent the market agents absorbing information from the CB's short-term macroeconomic outlook.
+
 %other vars description
-Initially, only the policy rate and the unemployment rate respond significantly to the shock. Employment increases and so does the policy rate, in line with positive expectations of the CB for the future economic conditions. Prices show a postive and persistent response as the economy heats up. Following the expansionary trend of the other variables, corporate spreads drop in response to positive information about economic fundamentals. 
+Initially, only the policy rate and the unemployment rate respond significantly to the shock. 
+Employment increases and so does the policy rate, in line with positive expectations of the CB for the future economic conditions. 
+In subsequent periods, prices show a postive and persistent response as the economy heats up. 
+Following the expansionary trend of the other variables, corporate spreads drop in response to positive information about economic fundamentals. 
+
 % GFC description
-Following the impact of the shock on the economy, the GFC exhibits a noteworthy and statistically significant positive response for a limited number of periods, consistent with our earlier analysis. Agents now hold optimistic expectations, the spillover mechanisms further amplify the upward trajectory of the GFC.
+After the impact of the shock on the economy, the GFC exhibits a noteworthy statistically significant positive response for a limited number of periods, consistent with our earlier analysis. Agents now hold optimistic expectations, the spillover mechanisms further amplify the upward trajectory of the GFC.
 
 
 %IRFs   - - - - - - - FIGURE 1 - - - - - - - - 
     \begin{figure}
         \centering
-        \includegraphics[scale=.39]{Graphs/IRF68_6lags.jpg}
+        \includegraphics[scale=.39]{Graphs/IRF68_3lags.jpeg}
         \caption{IRFs for an information shock - 68\% confidence bands}
         \label{fig:IRF68}
     \end{figure}
@@ -108,8 +113,8 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
 
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.31]{Graphs/forecast_err_variance_decomp_6lags.jpg}
-            \includegraphics*[scale=0.21]{Graphs/Inkedlegend.jpg}
+            \includegraphics[scale=.32]{Graphs/forecast_err_variance_decomp_3lags.jpg}
+            %\includegraphics*[scale=0.21]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
             \caption{Forecast Error Variance Decomposition}
             \label{fig:fevd}
@@ -119,7 +124,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
         
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.31]{Graphs/INFO_FF4_HD_6lags.jpg}
+            \includegraphics[scale=.32]{Graphs/INFO_FF4_HD_3lags.jpg}
             \includegraphics*[scale=0.21]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
             \caption{Information Shock Historical Decomposition}
@@ -130,7 +135,7 @@ Following the impact of the shock on the economy, the GFC exhibits a noteworthy 
         
         \begin{subfigure}{\textwidth}
             \centering
-            \includegraphics[scale=.31]{Graphs/GFC_HD_6lags.jpg}
+            \includegraphics[scale=.32]{Graphs/GFC_HD_3lags.jpg}
             \includegraphics*[scale=0.21]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
             \caption{GFC Historical Decomposition}
