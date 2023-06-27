@@ -69,8 +69,8 @@ end
 
 % Select ENDO variables [ TO CHECK ]
     % ordine variabili: slow moving per prime, fast moving dopo
-Xvnames  = {'INFO_FF4','logCPI100','Unempl_Rate','GFC','interest_rate_3month','spread_10yr3month',};
-Xvnames_long = {'Information shock','LogPrices','Unemployment Rate','Global Financial Cycle','Policy Rate', 'Spread'};
+Xvnames  = {'MPI_FF4','logCPI100','Unempl_Rate','GFC','interest_rate_3month','spread_10yr3month',};
+Xvnames_long = {'MP shock','LogPrices','Unemployment Rate','Global Financial Cycle','Policy Rate', 'Spread'};
 Xnvar = length(Xvnames);
 
 % Matrices [ TO CHECK ]

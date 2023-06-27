@@ -10,6 +10,7 @@
     \usepackage{geometry}
     \usepackage{subcaption}
     \usepackage{caption}
+    \usepackage{float}
 
 
     \setstretch{1.4}    % Set line spacing to 1.5 times the font size
@@ -37,9 +38,9 @@
 \newpage
 \section{Introductory remarks}    
 Unprecedented financial globalization, coupled with the emergence of global intermediaries, has profoundly influenced the functioning of national financial markets and the transmission mechanisms of policy shocks among increasingly interconnected nations.
-The United States dollar has traditionally held a position of unrivaled dominance in the international arena, to such an extent that US monetary policy has been observed to have spillover effects on other economies.
-Due to the extensive dollar-denominated assets, US domestic decisions significantly impact the portfolios of major global banks, thereby affecting lending and credit choices, corporate spreads, price levels, and agents' risk propensity.
-For this reason, macroeconomists are increasingly interested in understanding the movements of capital flows and the transmission of policy across borders. 
+The United States dollar has traditionally held a position of dominance in the international arena, to such an extent that US monetary policy has been observed to have spillover effects on other economies.
+Due to the extensive prevalence of dollar-denominated assets, US domestic decisions significantly impact the portfolios of major global banks, thereby affecting lending and credit choices, corporate spreads, price levels, and agents' risk propensity.
+For this reason, macroeconomists have been increasingly interested in understanding the movements of capital flows and the transmission of policy across borders. 
 
 % WHAT IS A PRICE PUZZLE?
 In the study of monetary policy (MP) shocks, a \enquote{price puzzle} refers to a situation where the response of prices to a MP shock is inconsistent with the predictions of standard economic theory. Specifically, it refers to an unexpected short-term relationship between MP actions and the behavior of prices and output. 
@@ -47,24 +48,24 @@ A contractionary MP shock, such as an increase in interest rates, is expected to
 Understanding the causes and implications of price puzzles is crucial for improving our understanding of the dynamics of MP and its impact on the economy.
 
 % MAREY 2020
-A recent paper by Miranda-Agrippino and Rey (2020) focuses on the interplay of US monetary policy and the existence of a Global Financial Cycle (GFC). 
+A recent paper by Miranda-Agrippino and Rey (2020) focuses on the interplay of US monetary policy and the existence of a Global Financial Cycle (GFC). They investivate the transmission of US monetary policy shocks via the response of capital flows, asset prices, global credit provision and the leverage of global financial intermediaties - variables that define the GFC.
 The authors analyse the transmission of MP shocks via a rich information Bayesian VAR with an external instrument, which claims to reduce issues of omitted variables and manage imperfect information. 
         % MA IN REALTA' NON RIESCONO PERCHE' SI ASSUME CHE CB HA PERFECT INFORMATION, MA NON E' COSI'
-MP shocks are identified from high-frequency asset prices adjustments around FOMC (Federal Open Market Committee) announcements. 
+In this paper, MP shocks are identified from high-frequency asset prices adjustments around FOMC (Federal Open Market Committee) announcements. 
 Such an instrument is valid only under the assumption that market agents can correctly discern monetary policy decisions from policy actions. If informational asymmetries are present, the high-frequency surprises are also a funcion of the \enquote{FED information effect}: information shocks about the economic fundamentals that are implicitly conveyed by the central bank's announcements. 
 Thus, the authors are using central bank's (CB) announcements to isolate the MP shocks. However, they assume that announcements are also informative with respect to the CB's internal macroeconomic assessment. 
 
 
 % results of MAREY (2020)
-The findings show the existence of a common global factor which accounts for roughly 20\% of the variability in prices of risky assets. 
+The findings show the existence of a common global factor which accounts for roughly 20\% of the variability risky asset prices. 
 In terms of domestic responses, they report that a contractionary shock depresses prices and output, and housing investments, accompanied by an increase in unemployment.
 Significantly, their work highlights a distinct reaction in global prices of risky assets, indicating the existence of spillover effects.
-Specifically, following a contraction in US monetary policy, there is an upsurge in risk aversion, a substantial reduction in credit provision, and a decrease in global capital inflows. Global intermediaries react faster than domestically oriented retail banks, however both contract leverage.
+Specifically, following a contraction in US monetary policy, there is an upsurge in risk aversion, a substantial reduction in credit provision, and a decrease in global capital inflows. Global intermediaries react faster than domestically oriented retail banks, both contract leverage.
 
 
 % MARICCO 2021    
 In the presence of incorrect accounting for imperfect information, the estimated dynamic responses to shocks are dependent on the choice of instrument, sample and empirical specification of choice. Miranda-Agrippino and Ricco (2021) propose an identification strategy that is robust to the presence of imperfect information between the public and the CB.
-High-frequency market-based surprises around policy announcements tend to correlate with the CB's private macroeconomic forecasts. Consequently, they define  monetary policy shocks as the exogenous shifts in the policy instrument that surprise market participants and are unforecastable, as well as being uncorrelated with the CB's systematic response to the macroeconomic outlook. They then build an instrument for MP shocks that project the monetary surprises on their own lags and on the CB's information set. This allows to disentangle monetary policy actions from information shocks. 
+High-frequency market-based surprises around policy announcements tend to correlate with the CB's private macroeconomic forecasts, suggesting and entanglement of monetary policy shocks with information shocks. Consequently, they define  monetary policy shocks as the exogenous shifts in the policy instrument that surprise market participants and are unforecastable, as well as being uncorrelated with the CB's systematic response to the macroeconomic outlook. They then build an instrument for MP shocks that projects the monetary surprises on their own lags and on the CB's information set. Thus disentangling monetary policy actions from information shocks. 
 Their results show behavior of dynamic responses coherent with economic theory and no evidence of output or price puzzles. Furthermore, they find that a monetary contraction is unequivocally and significantly recessionary, with output contracting immediately and significantly, as well as prices, domestic demand, labor market conditions, investments and household wealth. There is evidence of a credit channel which magnifies these effects through credit provision and financial markets, the yield curve flattens, borrowing costs and corporate spreads rise.
 
 % secondo Dario:
@@ -79,30 +80,41 @@ Section 3 will provide a discussion of results and conclude in Section 4.
 
 
 \section{Identification and estimation}
-To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The ordering of the variables in the model follows the rationale of Christiano, Eichenbaum and Evans (2005). The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
+To estimate the effects of an information shock on the GFC, I employ a VAR model with three lags, a constant, and a trend. The model is estimated using Ambrogio Cesa-Bianchi's VAR Toolbox for MatLab.
 
-The dataset consists of monthly observations from 1991 to 2015. I include all available periods and variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the GFC and the 10-year-3-month spread.
+The dataset consists of monthly observations from 1991 to 2015. I include all available periods and variables in the model, namely the unemployment rate, a logarithmic transformation of the Consumer Price Index (CPI), the 3-month policy rate, the 10-year-3-month spread and a measure of the GFC.
 
-During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons.
+The model can be represented as follows:
+$$
+y_t = \beta + \alpha t + A_1 y_{t-1}+\dots + A_p y_{t-p} + u_t ,
+\space t=1,2,\dots, T
+$$
+Where $\beta$ is a constant, $\alpha t$ captures the linear trend, $y_t$ is a vector of endogenous variables, $p$ is the lag order of the model and $u$ is the residual. In order to consistently estimate the impulse response functions, the ordering of the variables in $y_t$ puts the instrument at the top, followed in order by logCPI, unemployment rate, GFC, policy rate and spread. The model is identified via Cholesky decomposition.
+
+During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons. My IRFs output for a MP shock is reported in the appendix.
+
+
+
+
 
 \subsection{\textit{Impulse Response Functions}}
-Figure 1 shows the IRFs in the case of a positive information shock. The responses represent the market agents absorbing information from the CB's short-term macroeconomic outlook.
+Figure 1 shows the IRFs in the case of an information shock $\epsilon$. The responses represent the market agents absorbing information from the CB's short-term macroeconomic outlook.
 
 %other vars description
-Initially, only the policy rate and the unemployment rate respond significantly to the shock. 
-Employment increases and so does the policy rate, in line with positive expectations of the CB for the future economic conditions. 
-In subsequent periods, prices show a postive and persistent response as the economy heats up. 
-Following the expansionary trend of the other variables, corporate spreads drop in response to positive information about economic fundamentals. 
+The policy rate represents the CB's tool through which the information shock manifests itself, and it increases significantly for around 20 periods in response. The spread decreases significantly between the 6th and 20th period.
+In response to stronger information about economic fundamentals, employment increases immediately and significantly up to more than 30 months, while the CPI responds in a positive manner only after 19 periods. This is consistent with the public absorbing the CB's expectations of a short-term expansionary phase from its policy actions. 
+In response to the economy heating up, the CB may implement further increases in the policy rate to prevent undesired inflation, which may explain the further upward jump observed in the IRF.
 
 % GFC description
-After the impact of the shock on the economy, the GFC exhibits a noteworthy statistically significant positive response for a limited number of periods, consistent with our earlier analysis. Agents now hold optimistic expectations, the spillover mechanisms further amplify the upward trajectory of the GFC.
+Our response of interest is that of the GFC. 
+In response to the information shock, the GFC responds positively and significantly with a three period delay, and remains positive until the 12th month. This is consistent with our previous discussion of Miranda-Agrippino and Ricco (2021), as agents now hold positive expectations about the economic fundamentals. 
 
 
 %IRFs   - - - - - - - FIGURE 1 - - - - - - - - 
     \begin{figure}
         \centering
         \includegraphics[scale=.39]{Graphs/IRF68_3lags.jpeg}
-        \caption{IRFs for an information shock - 68\% confidence bands}
+        \caption{IRFs for the information shock $\epsilon$ - 68\% confidence bands}
         \label{fig:IRF68}
     \end{figure}
 % - - - - - - - - - - - - - - - - - - - - - - -
@@ -116,7 +128,7 @@ After the impact of the shock on the economy, the GFC exhibits a noteworthy stat
             \includegraphics[scale=.32]{Graphs/forecast_err_variance_decomp_3lags.jpg}
             %\includegraphics*[scale=0.21]{Graphs/Inkedlegend.jpg}
             \captionsetup{font=scriptsize}
-            \caption{Forecast Error Variance Decomposition}
+            \caption{Forecast Error Variance Decomposition for an information shock}
             \label{fig:fevd}
         \end{subfigure}
         
@@ -157,7 +169,7 @@ After the impact of the shock on the economy, the GFC exhibits a noteworthy stat
     % > MECCANISMI POSSIBILI
     % > CONFRONTO CON LA IRF A MP SHOCK
 
-Comparing IRFs between the MP shock and the information shock gives insight into the formation of price puzzles seen in alternative specifications. 
+Comparing IRFs between the MP shock and the information shock gives insight into the formation of puzzling responses seen in alternative specifications. 
 On impact, both shocks cause an increase in the policy rate. However, Miranda-Agrippino and Ricco (2021) found a positive MP shock to be unequivocally contractionary, as opposed to what we can ascertain from the IRFs of Figure 1, where the information shock is associated with an increase in the policy rate in an expansionary context. 
 A positive information shock signals a strong economy in the near future. In such a case, an increase in the policy rate is followed by economic expansion. Prices rise, spreads fall and the GFC is stronger. 
         % [ ] CHECK NEXT SENTENCE BECAUSE I DO NOT KNOW WHAT I WANTED TO SAY
@@ -172,18 +184,18 @@ Figure 2 shows the Forecast Error Variance Decomposition (FEVD) for the informat
 
 %vrs response to policy rate and to info shock 
     % [ ]  CORREGGI PARAGRAFO BASANDOTI SU NUOVO PANEL (a)
-FEVD is useful to understand how much other variables contribute to the variance of the analysed variable. 
+FEVD is useful to understand how much other variables contribute to the forecast error variance of the analysed variable. 
 In panel (a), we can see that the policy rate has an immediate and hefty effect on the 10-year-3-month spread variable. Instead, the information shock mostly affects the unemployment rate, consistent with market agents adjusting labor demand depending on their expectations about economic fundamentals.
 % GFC response to POLICY RATE and to INFO SHOCK
-The GFC is mostly affected by the policy rate and the unemployment rate. 
-However, given that the information shock originates from the US and provides insights into the state of the US economy, it is crucial to acknowledge that a non-negligible portion of the GFC is influenced by this particular shock. The impact of the information shock on the GFC cannot be dismissed or underestimated, as it plays a substantial role in shaping its dynamics.
+The GFC is mostly affected by the policy rate and the unemployment rate, and it seems to be only slightly affected by the information shock. 
+However, given that the information shock originates from the US and provides insights into the state of the US economy, it is crucial to acknowledge that a non-negligible portion of the GFC is influenced by this particular shock. The impact of the information shock on the GFC cannot be dismissed or underestimated, as it plays a role in shaping its dynamics.
 
 \subsection{\textit{Historical Decompositions}}
 % comment HD of the info shock and of the GFC (nei periodi di crisi l'info shock è più o meno capace di spiegare le fluttuazioni di GFC?)
 
     % INFO SHOCK:
         % [ ]  CORREGGI PARAGRAFO BASANDOTI SU NUOVO PANEL (B)
-The historical decomposition (HD) of the information shock in panel (b) is informative regarding the level of uncertainty surrounding economic conditions. 
+The historical decomposition (HD) of the information shock in panel (b).
 The panel is noisy and does not suggest an immediate systematic upward or downward contribution of the other variables to the shock's variability. 
 Nevertheless, it is informative regarding the level of uncertainty surrounding economic conditions. 
 It reveals that information shocks tend to exhibit greater variability and intensity during periods of significant economic stress, as seen in notable events such as the recessions around 1991, the dot-com bubble of the early 2000s, and the global financial crisis of 2008. These periods of high economic stress serve as crucial markers in the historical decomposition graph, underscoring the pronounced impact of information shocks during times of instability.
@@ -205,8 +217,9 @@ The information shock also figures as a relevant component of the variation in G
 
 \section{Conclusion}
 %Considering all of the above, my analysis finds a positive and significant response of the GFC to a positive information shock coming from the US. 
-In this paper, I have presented the main tools and results from the works of Miranda-Agrippino and Rey (2020) and Miranda-Agrippino and Ricco (2021). I have then estimated a VAR model that exploits an information shock proxy as defined by Miranda-Agrippino and Ricco (2021) with the aim of exploring the relation between the GFC and the shock.
-In line with the spillover effects from US MP to the rest of the world observed by Miranda-Agrippino and Rey (2020) and Miranda-Agrippino and Ricco (2021), I find that the most prominent contributor among the considered variables to the GFC variabilty is the US 3-month policy rate. Alongside this finding, my main result is that the GFC is positively and significantly affected by a positive information shock, as defined by Miranda-Agrippino and Ricco (2021); additionally, information shocks are relevant contributors to the GFC variability alongside the US policy rate, as shown by the GFC historical decomposition. 
+In this paper, I have presented the main tools and results from the works of Miranda-Agrippino and Rey (2020) and Miranda-Agrippino and Ricco (2021). I have then estimated a VAR model identified via Cholesky decomposition that exploits an information shock proxy as defined by Miranda-Agrippino and Ricco (2021), with the aim of exploring the relation between the GFC and the shock.
+I find that the most prominent contributor among the considered variables to the GFC variabilty is the US 3-month policy rate, as shown by the GFC's historical decomposition. The information shock appears as a non-negligible component in the FEVD of the GFC. Alongside this finding, my main result is that the IRFs show that the GFC responds positively and significantly to an information shock, with the peak of the response situated around the 5th period. 
+In conclusion, my findings corroborate that the market responds to both policy actions and implicit information in CB announcements. 
 
 
 
@@ -214,10 +227,29 @@ In line with the spillover effects from US MP to the rest of the world observed 
 \section*{References}
 \begin{itemize}
     \item Cesa-Bianchi, Ambrogio. \url{https://github.com/ambropo/VAR-Toolbox}, VAR Toolbox for MatLab.
-    \item Christiano, Lawrence J., Martin Eichenbaum, and Charles L. Evans. \enquote{Nominal rigidities and the dynamic effects of a shock to monetary policy.} Journal of political Economy 113.1 (2005): 1-45.
     \item Miranda-Agrippino, Silvia, and Giovanni Ricco. \enquote{The transmission of monetary policy shocks.} American Economic Journal: Macroeconomics 13.3 (2021): 74-107.
     \item Miranda-Agrippino, Silvia, and Hélene Rey. \enquote{US monetary policy and the global financial cycle.} The Review of Economic Studies 87.6 (2020): 2754-2776.
-    
 \end{itemize}
+
+
+
+\section*{Appendix}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.38]{Graphs/IRF68_MPshock_3lags.jpg}
+    \caption{IRFs for the monetary policy shock $\epsilon$ - 68\% confidence bands}
+    \label{fig:IRF68_MPshock}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.38]{Graphs/FEVD_MPshock.jpg}
+    \caption{Forecast Error Variance Decomposition for a monetary policy shock}
+    \label{fig:FEVD_MPshock}
+\end{figure}
+
+
+
+
 
 \end{document}
