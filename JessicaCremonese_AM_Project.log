@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  27 JUN 2023 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  27 JUN 2023 14:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -313,12 +313,12 @@ LaTeX Warning: Float too large for page by 18.68709pt on input line 159.
 <Graphs/IRF68_MPshock_3lags.jpg, id=44, 1170.62344pt x 624.08156pt>
 File: Graphs/IRF68_MPshock_3lags.jpg Graphic file (type jpg)
 <use Graphs/IRF68_MPshock_3lags.jpg>
-Package pdftex.def Info: Graphs/IRF68_MPshock_3lags.jpg  used on input line 240.
+Package pdftex.def Info: Graphs/IRF68_MPshock_3lags.jpg  used on input line 241.
 (pdftex.def)             Requested size: 444.84154pt x 237.15346pt.
 <Graphs/FEVD_MPshock.jpg, id=45, 1158.57843pt x 629.35126pt>
 File: Graphs/FEVD_MPshock.jpg Graphic file (type jpg)
 <use Graphs/FEVD_MPshock.jpg>
-Package pdftex.def Info: Graphs/FEVD_MPshock.jpg  used on input line 246.
+Package pdftex.def Info: Graphs/FEVD_MPshock.jpg  used on input line 247.
 (pdftex.def)             Requested size: 440.26437pt x 239.15596pt.
  [7 <./Graphs/IRF68_MPshock_3lags.jpg>] [8 <./Graphs/FEVD_MPshock.jpg>] (./JessicaCremonese_AM_Project.aux) ) 
 Here is how much of TeX's memory you used:
@@ -330,7 +330,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,9n,77p,739b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on JessicaCremonese_AM_Project.pdf (9 pages, 1145642 bytes).
+Output written on JessicaCremonese_AM_Project.pdf (9 pages, 1145686 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream

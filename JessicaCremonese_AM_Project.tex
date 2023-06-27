@@ -89,7 +89,7 @@ $$
 y_t = \beta + \alpha t + A_1 y_{t-1}+\dots + A_p y_{t-p} + u_t ,
 \space t=1,2,\dots, T
 $$
-Where $\beta$ is a constant, $\alpha t$ captures the linear trend, $y_t$ is a vector of endogenous variables, $p$ is the lag order of the model and $u$ is the residual. In order to consistently estimate the impulse response functions, the ordering of the variables in $y_t$ puts the instrument at the top, followed in order by logCPI, unemployment rate, GFC, policy rate and spread. The model is identified via Cholesky decomposition.
+where $\beta$ is a constant, $\alpha t$ captures the linear trend, $y_t$ is a vector of endogenous variables, $p$ is the lag order of the model and $u$ is the residual. In order to consistently estimate the impulse response functions, the ordering of the variables in $y_t$ puts the instrument at the top, followed in order by logCPI, unemployment rate, GFC, policy rate and spread. The model is identified via Cholesky decomposition.
 
 During the course, we have examined time series and IRFs for a similar VAR model based on the monetary policy proxy MPI\_FF4. Therefore, I will not present my IRFs output for the case of a MP shock and will instead refer to the provided material and cited papers for any comparisons. My IRFs output for a MP shock is reported in the appendix.
 
@@ -218,7 +218,8 @@ The information shock also figures as a relevant component of the variation in G
 \section{Conclusion}
 %Considering all of the above, my analysis finds a positive and significant response of the GFC to a positive information shock coming from the US. 
 In this paper, I have presented the main tools and results from the works of Miranda-Agrippino and Rey (2020) and Miranda-Agrippino and Ricco (2021). I have then estimated a VAR model identified via Cholesky decomposition that exploits an information shock proxy as defined by Miranda-Agrippino and Ricco (2021), with the aim of exploring the relation between the GFC and the shock.
-I find that the most prominent contributor among the considered variables to the GFC variabilty is the US 3-month policy rate, as shown by the GFC's historical decomposition. The information shock appears as a non-negligible component in the FEVD of the GFC. Alongside this finding, my main result is that the IRFs show that the GFC responds positively and significantly to an information shock, with the peak of the response situated around the 5th period. 
+
+I find the information shock to be a significant contributor to the FEVD of the GFC, although not as much as the policy rate. While spread and prices respond with a delay, the policy rate responds positively and significantly from the start to around 20 months after impact. Unemployment reacts immediately by decreasing for more than 30 periods. Most importantly, the GFC responds positively and significantly to the information shock between 3 to 12 months after impact.
 In conclusion, my findings corroborate that the market responds to both policy actions and implicit information in CB announcements. 
 
 
