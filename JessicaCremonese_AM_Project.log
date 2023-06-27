@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  27 JUN 2023 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  27 JUN 2023 17:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -279,46 +279,46 @@ Package caption Info: End \AtBeginDocument code.
 <Graphs/IRF68_3lags.jpeg, id=16, 1009.52156pt x 558.58687pt>
 File: Graphs/IRF68_3lags.jpeg Graphic file (type jpg)
 <use Graphs/IRF68_3lags.jpeg>
-Package pdftex.def Info: Graphs/IRF68_3lags.jpeg  used on input line 116.
+Package pdftex.def Info: Graphs/IRF68_3lags.jpeg  used on input line 117.
 (pdftex.def)             Requested size: 393.71182pt x 217.848pt.
 <Graphs/forecast_err_variance_decomp_3lags.jpg, id=17, 1175.14032pt x 627.84563pt>
 File: Graphs/forecast_err_variance_decomp_3lags.jpg Graphic file (type jpg)
 <use Graphs/forecast_err_variance_decomp_3lags.jpg>
-Package pdftex.def Info: Graphs/forecast_err_variance_decomp_3lags.jpg  used on input line 128.
+Package pdftex.def Info: Graphs/forecast_err_variance_decomp_3lags.jpg  used on input line 129.
 (pdftex.def)             Requested size: 376.05258pt x 200.9147pt.
 <Graphs/INFO_FF4_HD_3lags.jpg, id=18, 1185.67969pt x 628.59843pt>
 File: Graphs/INFO_FF4_HD_3lags.jpg Graphic file (type jpg)
 <use Graphs/INFO_FF4_HD_3lags.jpg>
-Package pdftex.def Info: Graphs/INFO_FF4_HD_3lags.jpg  used on input line 139.
+Package pdftex.def Info: Graphs/INFO_FF4_HD_3lags.jpg  used on input line 140.
 (pdftex.def)             Requested size: 379.42525pt x 201.15561pt.
 <Graphs/Inkedlegend.jpg, id=19, 973.6375pt x 84.315pt>
 File: Graphs/Inkedlegend.jpg Graphic file (type jpg)
 <use Graphs/Inkedlegend.jpg>
-Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 140.
+Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 141.
 (pdftex.def)             Requested size: 204.46991pt x 17.70667pt.
 <Graphs/GFC_HD_3lags.jpg, id=21, 1157.07281pt x 620.3175pt>
 File: Graphs/GFC_HD_3lags.jpg Graphic file (type jpg)
 <use Graphs/GFC_HD_3lags.jpg>
-Package pdftex.def Info: Graphs/GFC_HD_3lags.jpg  used on input line 150.
+Package pdftex.def Info: Graphs/GFC_HD_3lags.jpg  used on input line 151.
 (pdftex.def)             Requested size: 370.27087pt x 198.50566pt.
 File: Graphs/Inkedlegend.jpg Graphic file (type jpg)
 <use Graphs/Inkedlegend.jpg>
-Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 151.
+Package pdftex.def Info: Graphs/Inkedlegend.jpg  used on input line 152.
 (pdftex.def)             Requested size: 204.46991pt x 17.70667pt.
 
 
-LaTeX Warning: Float too large for page by 18.68709pt on input line 159.
+LaTeX Warning: Float too large for page by 18.68709pt on input line 160.
 
 [3] [4 <./Graphs/IRF68_3lags.jpeg>] [5 <./Graphs/Inkedlegend.jpg> <./Graphs/forecast_err_variance_decomp_3lags.jpg> <./Graphs/INFO_FF4_HD_3lags.jpg> <./Graphs/GFC_HD_3lags.jpg>] [6]
 <Graphs/IRF68_MPshock_3lags.jpg, id=44, 1170.62344pt x 624.08156pt>
 File: Graphs/IRF68_MPshock_3lags.jpg Graphic file (type jpg)
 <use Graphs/IRF68_MPshock_3lags.jpg>
-Package pdftex.def Info: Graphs/IRF68_MPshock_3lags.jpg  used on input line 241.
+Package pdftex.def Info: Graphs/IRF68_MPshock_3lags.jpg  used on input line 242.
 (pdftex.def)             Requested size: 444.84154pt x 237.15346pt.
 <Graphs/FEVD_MPshock.jpg, id=45, 1158.57843pt x 629.35126pt>
 File: Graphs/FEVD_MPshock.jpg Graphic file (type jpg)
 <use Graphs/FEVD_MPshock.jpg>
-Package pdftex.def Info: Graphs/FEVD_MPshock.jpg  used on input line 247.
+Package pdftex.def Info: Graphs/FEVD_MPshock.jpg  used on input line 248.
 (pdftex.def)             Requested size: 440.26437pt x 239.15596pt.
  [7 <./Graphs/IRF68_MPshock_3lags.jpg>] [8 <./Graphs/FEVD_MPshock.jpg>] (./JessicaCremonese_AM_Project.aux) ) 
 Here is how much of TeX's memory you used:
@@ -330,7 +330,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,9n,77p,739b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on JessicaCremonese_AM_Project.pdf (9 pages, 1145727 bytes).
+Output written on JessicaCremonese_AM_Project.pdf (9 pages, 1146061 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
